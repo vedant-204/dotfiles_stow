@@ -6,26 +6,32 @@
 #|_.__/|___/ .__/ \_/\_/ |_| |_| |_|
 #          |_|
 #by --vedant
-pgrep -x sxhkd > /dev/null || sxhkd &
-$HOME/.config/polybar/launch.sh &
-zsh ~/.fehbg
-bspc monitor -d I II III IV V VI VII VIII  
-picom --experimental-backend --config $HOME/.config/picom/picom.conf &
-#wal -i ~/Pictures/phy.png 
 
-bspc config border_width         5 
+pgrep -x sxhkd > /dev/null || sxhkd &
+bspc monitor -d I II III IV V VI VII VIII  
+
 bspc config window_gap          30
 
+#ratio
 bspc config split_ratio          0.52
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
+#border
+bspc config border_width         5 
 bspc config active_border_color 	"#969DAC"
 bspc config focused_border_color 	"#6D99F7"
 bspc config normal_border_color 	"#132344"
 
+#rule
 bspc rule -a Gimp desktop='^8' state=floating follow=on
 bspc rule -a Chromium desktop='^2'
 bspc rule -a mplayer2 state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
+
+#auto-start
+$HOME/.config/polybar/launch.sh &
+zsh ~/.fehbg
+picom --experimental-backend --config $HOME/.config/picom/picom.conf &
+#wal -i ~/Pictures/phy.png 
