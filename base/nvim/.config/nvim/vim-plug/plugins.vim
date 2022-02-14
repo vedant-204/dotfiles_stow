@@ -19,5 +19,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     "Airline"
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'    
+    "Color Picker"
+    Plug 'KabbAmine/vCoolor.vim'
 
 call plug#end()
