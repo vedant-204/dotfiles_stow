@@ -63,7 +63,7 @@ wm-restack = bspwm
 
 modules-left = powermenu round-left bspwm round-right 
 modules-center =  
-modules-right =      temperature   alsa battery round-left cpu round-right  mem xbacklight round-left time round-right   
+modules-right =      temperature   pulseaudio battery round-left cpu round-right  mem xbacklight round-left time round-right   
 
 font-0 = JetBrainsMono Nerd Font:style=Bold:pixelsize=13;3
 font-1 = JetBrainsMono Nerd Font:size=18;5
@@ -139,8 +139,8 @@ label-urgent-foreground = #88C0D0
 label-urgent-background = #2b2f37
 label-urgent-padding = 1
 
-[module/alsa]
-type = internal/alsa
+[module/pulseaudio]
+type = internal/pulseaudio
 format-volume = <label-volume> <bar-volume>
 label-volume = " "  
 label-volume-foreground = ${colors.foreground}
