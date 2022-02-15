@@ -17,7 +17,7 @@
 ;==========================================================
 
 [colors]
-background = ${xrdb:background}
+background = #3F7374 
 foreground = #adb1b9   
 
 color0 = ${xrdb:color0}
@@ -40,7 +40,7 @@ dark-light = #272A2B
 active-light = #313435
 
 [bar/example]
-tray-position = right
+tray-position = empty
 tray-padding =5
 monitor = eDP1
 width =  98%
@@ -63,14 +63,17 @@ wm-restack = bspwm
 
 modules-left = powermenu round-left bspwm round-right 
 modules-center =  
-modules-right =      temperature   pulseaudio battery round-left cpu round-right  mem xbacklight round-left time round-right   
+modules-right = temperature pulseaudio sep battery sep round-left cpu round-right mem xbacklight sep wlan round-left time round-right sep   
 
 font-0 = JetBrainsMono Nerd Font:style=Bold:pixelsize=13;3
 font-1 = JetBrainsMono Nerd Font:size=18;5
 font-2 = Material Design Icons:style=Bold:size=13;3
 font-3 = unifont:fontformat=truetype:size=13:antialias=true;
 
-
+[module/sep]
+type = custom/text
+content = %{T3}  %{T-}
+content-foreground = ${colors.backgorund}
 
 [module/round-left]
 type = custom/text
@@ -92,13 +95,12 @@ format-warn = <ramp> <label-warn>
 format-padding = 0
 label = %temperature%
 label-warn = %temperature%
-ramp-0 =  "󰜗" 
+ramp-0 =  "" 
 ramp-foreground = #a4ebf3
 label-padding-right = 1
 
 [module/bspwm]
 type = internal/bspwm
-
 pin-workspaces = true
 inline-mode = true
 enable-click = true
@@ -107,34 +109,33 @@ reverse-scroll = false
 
 format = <label-state>
 
-ws-icon-0 = 1;%{F#F9DE8F}  
-ws-icon-1 = 2;%{F#ff9b93}   
-ws-icon-2 = 3;%{F#95e1d3}    
-ws-icon-3 = 4;%{F#81A1C1} 
-ws-icon-4 = 5;%{F#A3BE8C} 
-ws-icon-5 = 6;%{F#F9DE8F}ﭮ  
+;ws-icon-0 = 1;%{F#F9DE8F}  
+;ws-icon-1 = 2;%{F#ff9b93}   
+;ws-icon-2 = 3;%{F#95e1d3}    
+;ws-icon-3 = 4;%{F#81A1C1} 
+;ws-icon-4 = 5;%{F#A3BE8C} 
+;ws-icon-5 = 6;%{F#F9DE8F}ﭮ 
  
 label-separator = ""
 label-separator-background = #2b2f37
 
-label-focused =  %icon%  
+label-focused =   
 label-focused-foreground = ${colors.foreground}
-label-focused-underline =  #565c64
 label-focused-padding = 1
 label-focused-background = #2b2f37
 
-label-occupied =  %icon%  
+label-occupied =  
 label-occupied-foreground = #646870  
 label-occupied-background = #2b2f37
 label-occupied-padding = 1
 
-label-empty = %icon%
+label-empty = ⭘
 label-empty-foreground =   ${colors.foreground}
 label-empty-padding = 1
 label-empty-background = #2b2f37
 
 
-label-urgent = %icon%
+label-urgent =  
 label-urgent-foreground = #88C0D0
 label-urgent-background = #2b2f37
 label-urgent-padding = 1
@@ -146,10 +147,10 @@ label-volume = " "
 label-volume-foreground = ${colors.foreground}
 
 format-muted-foreground = ${colors.foreground}
-label-muted = 󰚙
+label-muted = 
 
 format-muted-padding = 1
-format-muted-background = #2b2f37
+format-muted-background = #3F7374
 
 bar-volume-width = 10
 bar-volume-foreground-0 = #61afef
@@ -201,10 +202,10 @@ content-foreground =  #61afef
 
 [module/wlan]
 type = internal/network
-interface = wlp2s0
+interface = wlo1
 interval = 3.0
 format-connected =  <label-connected>
-label-connected = " 󰤪  " 
+label-connected = "  " 
 label-connected-foreground = #A3BE8C
  
 
