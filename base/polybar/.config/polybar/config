@@ -49,7 +49,7 @@ padding-left =1
 padding-right =0
 background = ${colors.background}
 foreground = ${colors.foreground}
-bottom = false
+bottom = true
 border-top-size = 7
 border-bottom-size = 7
 border-top-color = ${colors.background}
@@ -58,12 +58,11 @@ offset-x = 1%
 offset-y = 0.5%
 fixed-center = true
 line-size = 3
-
 wm-restack = bspwm
 
-modules-left = powermenu round-left bspwm round-right 
-modules-center =  
-modules-right = temperature pulseaudio sep battery sep round-left cpu round-right mem xbacklight sep wlan round-left time round-right sep   
+modules-left = powermenu round-left time round-right sep round-left cpu round-right 
+modules-center =  round-left bspwm round-right
+modules-right = temperature pulseaudio sep battery sep mem xbacklight sep wlan sep 
 
 font-0 = JetBrainsMono Nerd Font:style=Bold:pixelsize=13;3
 font-1 = JetBrainsMono Nerd Font:size=18;5
