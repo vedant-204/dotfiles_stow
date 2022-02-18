@@ -127,3 +127,7 @@ super + {Left,Down,Up,Right}
 #screenshot
 super + shift + s
 	flameshot gui
+
+#open the browser
+super + ctrl + b
+	vivaldi-stable
