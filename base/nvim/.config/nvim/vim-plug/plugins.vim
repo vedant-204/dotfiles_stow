@@ -8,18 +8,19 @@ endif
 
 call plug#begin('~/.config/nvim/autoload/plugged')
 
-    " Better Syntax Support
+    " Better Syntax Support"
     Plug 'sheerun/vim-polyglot'
-    " File Explorer
+    " File Explorer"
     Plug 'scrooloose/NERDTree'
     " Auto pairs for '(' '[' '{'
     Plug 'jiangmiao/auto-pairs'
-    " Discord Presence
+    " Discord Presence"
     Plug 'andweeb/presence.nvim'
     "Airline"
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'    
     "Color Picker"
     Plug 'KabbAmine/vCoolor.vim'
-
+    "fzf"
+    Plug 'junegunn/fzf.vim'    
 call plug#end()
