@@ -131,3 +131,7 @@ super + shift + s
 #open the browser
 super + ctrl + b
 	vivaldi-stable
+
+#scripted commands
+super + shift + g
+	$HOME/.scripts/gitpat.sh
