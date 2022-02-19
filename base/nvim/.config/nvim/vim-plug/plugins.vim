@@ -23,4 +23,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'KabbAmine/vCoolor.vim'
     "fzf"
     Plug 'junegunn/fzf.vim'    
+    "UI"
 call plug#end()
+
