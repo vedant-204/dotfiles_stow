@@ -23,6 +23,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'KabbAmine/vCoolor.vim'
     "fzf"
     Plug 'junegunn/fzf.vim'    
-    "UI"
+    "Auto complete"
+    Plug 'neoclide/coc.nvim'    
 call plug#end()
 
