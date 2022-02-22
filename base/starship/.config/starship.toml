@@ -24,7 +24,7 @@ format = "[$path](#FFD460)[$lock_symbol]($lock_style) "
 
 [git_branch]
 format = " [$symbol$branch]($style) "
-symbol = " "
+symbol = "異"
 style = "bold yellow"
 
 [git_commit]
