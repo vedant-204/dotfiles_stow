@@ -25,5 +25,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'junegunn/fzf.vim'    
     "Auto-complete"
     Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
+    "Themes"
+    Plug 'Mangeshrex/everblush.vim'
+
 call plug#end()
 
