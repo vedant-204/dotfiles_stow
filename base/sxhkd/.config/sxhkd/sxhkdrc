@@ -135,3 +135,11 @@ super + ctrl + b
 #scripted commands
 super + shift + g
 	$HOME/.scripts/gitpat.sh
+
+#Pulseaudio
+
+super + alt + i 
+	pactl -- set-sink-volume 0 +5%
+
+super + alt + d
+	pactl -- set-sink-volume 0 -5%
