@@ -143,3 +143,8 @@ super + alt + i
 
 super + alt + d
 	pactl -- set-sink-volume 0 -5%
+
+
+#Misc
+super + shift + h
+	$HOME/.scripts/import.sh
