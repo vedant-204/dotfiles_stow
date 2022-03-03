@@ -146,5 +146,3 @@ super + alt + d
 
 
 #Misc
-super + shift + h
-	$HOME/.scripts/import.sh
