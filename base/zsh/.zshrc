@@ -255,6 +255,17 @@ alias sz='du -sh ./* | sort -h'
 
 
 # Functions
+ushort(){
+  curl -F 'shorten="'@-'"' https://0x0.st
+}
+
+ufile(){
+  curl -F 'file="'@-'"' https://0x0.st
+}
+
+ushareg(){
+  curl -F 'url="'@-'"' https://0x0.st
+}
 
 spr (){
     cat "$@" \
