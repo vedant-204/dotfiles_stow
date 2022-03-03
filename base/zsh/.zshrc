@@ -256,15 +256,15 @@ alias sz='du -sh ./* | sort -h'
 
 # Functions
 ushort(){
-  curl -F 'shorten="'@-'"' https://0x0.st
+  curl -F 'shorten='$1'' https://0x0.st
 }
 
 ufile(){
-  curl -F 'file="'@-'"' https://0x0.st
+  curl -F 'file='$1'' https://0x0.st
 }
 
 ushareg(){
-  curl -F 'url="'@-'"' https://0x0.st
+  curl -F 'url='$1'' https://0x0.st
 }
 
 spr (){
