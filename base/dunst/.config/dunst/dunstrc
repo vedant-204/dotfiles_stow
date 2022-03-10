@@ -1,5 +1,11 @@
-# See dunst(5) for all configuration options
-
+#      _                 _
+#   __| |_   _ _ __  ___| |_
+#  / _` | | | | '_ \/ __| __|
+# | (_| | |_| | | | \__ \ |_
+#  \__,_|\__,_|_| |_|___/\__|
+#
+# By : Vedantdev Katyayan
+# Example file
 [global]
     ### Display ###
 
