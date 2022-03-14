@@ -212,6 +212,7 @@ alias fixpacman="sudo rm /var/lib/pacman/db.lck"
 alias tarnow='tar -acf '
 alias untar='tar -zxvf '
 alias wget='wget -c '
+alias devr='docs ~/Desktop/DEV/imp-docs/2.png'
 alias psmem='ps auxf | sort -nr -k 4'
 alias psmem10='ps auxf | sort -nr -k 4 | head -10'
 alias ..='cd ..'
