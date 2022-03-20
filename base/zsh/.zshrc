@@ -254,7 +254,8 @@ alias sq='sudo mysql -u root'
 alias wall='feh --bg-scale --no-fehbg --random'
 alias code='devour code .'
 alias sz='du -sh ./* | sort -h'
-
+alias makecfile='echo "#include <stdio.h>\n#include <stdlib.h>\n\n\nint main(){\n}" >> '
+alias makecppfile='echo "#include <stdio.h>\n#include <stdlib.h>\n#include <iostream>\n#include <bits/stdc++.h>\n\nint main(){\n}" >> '
 
 # Functions
 ushort(){
