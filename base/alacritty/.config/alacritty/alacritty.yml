@@ -1,5 +1,4 @@
-#Configuration for Alacritty, the GPU enhanced terminal emulator.
-#        _                 _ _   _
+#Configuration for Alacritty, the GPU enhanced terminal emulator. _                 _ _   _
 #   __ _| | __ _  ___ _ __(_) |_| |_ _   _
 #  / _` | |/ _` |/ __| '__| | __| __| | | |
 # | (_| | | (_| | (__| |  | | |_| |_| |_| |
@@ -7,7 +6,6 @@
 #                                    |___/
 
 # By : Vedantdev Katyayan
-# Color : Chris Kempson
 
 items:
   - colors:
@@ -132,7 +130,7 @@ window:
 #
 # Window opacity as a floating point number from `0.0` to `1.0`.
 # The value `0.0` is completely transparent and `1.0` is opaque.
-opacity: 0.7 
+opacity: 0.3 
 # Startup Mode (changes require restart)
 #
 # Values for `startup_mode`:
@@ -186,7 +184,7 @@ font:
 # The `style` can be specified to pick a specific face.
 #style: Bold Italic
 # Point size
-#size: 11.0
+  size: 10.0
 # Offset is the extra space around each character. `offset.y` can be thought
 # of as modifying the line spacing, and `offset.x` as modifying the letter
 # spacing.
