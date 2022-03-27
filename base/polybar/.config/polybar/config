@@ -149,16 +149,16 @@ format-muted-foreground = ${colors.foreground}
 label-muted = 
 
 format-muted-padding = 1
-format-muted-background = #3F7374
+format-muted-background = #583D72
 
 bar-volume-width = 10
-bar-volume-foreground-0 = #61afef
-bar-volume-foreground-1 = #61afef
-bar-volume-foreground-2 = #61afef
-bar-volume-foreground-3 = #61afef
-bar-volume-foreground-4 = #61afef
-bar-volume-foreground-5 = #61afef
-bar-volume-foreground-6 = #61afef
+bar-volume-foreground-0 = #ff8474
+bar-volume-foreground-1 = #ff8474
+bar-volume-foreground-2 = #ff8474
+bar-volume-foreground-3 = #ff8474
+bar-volume-foreground-4 = #ff8474
+bar-volume-foreground-5 = #ff8474
+bar-volume-foreground-6 = #ff8474
 bar-volume-gradient = false
 bar-volume-indicator = |
 bar-volume-indicator-foreground = #61afef
