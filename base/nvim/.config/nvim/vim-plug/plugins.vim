@@ -27,6 +27,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
     "Themes"
     Plug 'Mangeshrex/everblush.vim'
+    "Copilot"
+    Plug 'github/copilot.vim'    
 
-call plug#end()
+call plugl#end()
 
