@@ -151,4 +151,6 @@ super + alt + d
 	pactl -- set-sink-volume 0 -5%
 super + alt + f
 	rofi -show filebrowser
+super + shift + b
+	$HOME/.scripts/web-search.sh
 #Misc
