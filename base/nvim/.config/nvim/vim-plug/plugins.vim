@@ -30,5 +30,5 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     "Copilot"
     Plug 'github/copilot.vim'    
 
-call plugl#end()
+call plug#end()
 
