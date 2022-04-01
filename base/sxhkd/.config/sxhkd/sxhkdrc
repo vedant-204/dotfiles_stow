@@ -149,6 +149,6 @@ super + alt + i
 
 super + alt + d
 	pactl -- set-sink-volume 0 -5%
-
-
+super + alt + f
+	rofi -show filebrowser
 #Misc
