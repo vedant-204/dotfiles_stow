@@ -22,13 +22,25 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     "Color Picker"
     Plug 'KabbAmine/vCoolor.vim'
     "fzf"
-    Plug 'junegunn/fzf.vim'    
+    Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+    Plug 'junegunn/fzf.vim'
     "Auto-complete"
     Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
     "Themes"
     Plug 'Mangeshrex/everblush.vim'
     "Copilot"
     Plug 'github/copilot.vim'    
-
+    "Dracula theme"
+    Plug 'dracula/vim'
+    "icons"
+    Plug 'ryanoasis/vim-devicons'
 call plug#end()
+
+"Config Section
+
+if (has("termguicolors"))
+ set termguicolors
+endif
+syntax enable
+colorscheme dracula
 
