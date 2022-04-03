@@ -34,6 +34,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'dracula/vim'
     "icons"
     Plug 'ryanoasis/vim-devicons'
+    Plug 'tpope/vim-fugitive'
 call plug#end()
 
 "Config Section
