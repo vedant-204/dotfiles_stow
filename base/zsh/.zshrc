@@ -195,6 +195,7 @@ alias l='(exa -a --color=always --group-directories-first) |bat '  # all files a
 alias ld='(exa -l --color=always --group-directories-first) | bat'  # long format
 
 # Common use aliases
+alias dot='cd ~/.config && nvim'
 alias mpv="devour mpv"
 alias course="dev && cd imp-docs"
 alias myweb="dev && cd WEB-DEV/vedant-website && code ."
