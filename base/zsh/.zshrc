@@ -196,6 +196,7 @@ alias ld='(exa -l --color=always --group-directories-first) | bat'  # long forma
 
 # Common use aliases
 alias dot='cd ~/.config && nvim'
+alias minecraft='java -jar ~/Documents/TLauncher-2.841.jar'
 alias mpv="devour mpv"
 alias course="dev && cd imp-docs"
 alias myweb="dev && cd WEB-DEV/vedant-website && code ."
