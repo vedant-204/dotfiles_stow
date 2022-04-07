@@ -10,6 +10,7 @@
 #export PATH="$PATH:/home/kshgrk/Documents/flutter/bin/cache/dart-sdk"
 #export PATH="$HOME/.emacs.d/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.cargo/bin:$PATH"
 #export CHROME_EXECUTABLE='/usr/bin/google-chrome-stable'
 #export PATH="$HOME/.emacs.d/bin:$PATH"
 # export ANDROID_SDK= '$HOME/Android/Sdk'
