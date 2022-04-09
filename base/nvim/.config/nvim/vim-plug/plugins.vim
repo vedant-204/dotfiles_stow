@@ -35,6 +35,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     "icons"
     Plug 'ryanoasis/vim-devicons'
     Plug 'tpope/vim-fugitive'
+    "HTML"
+    Plug 'mattn/emmet-vim'
 call plug#end()
 
 "Config Section
