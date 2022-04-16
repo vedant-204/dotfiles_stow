@@ -8,6 +8,9 @@
 # wm independent hotkeys
 #
 
+
+super + @x + @u + u
+    shutdown now
 # terminal emulator
 super + Return
 	alacritty
@@ -153,4 +156,10 @@ super + alt + f
 	rofi -show filebrowser
 super + shift + b
 	$HOME/.scripts/web-search.sh
+
+#Screen Record
+super + r
+	$HOME/.scripts/record.sh
+
 #Misc
+
