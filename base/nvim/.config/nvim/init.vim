@@ -6,6 +6,8 @@ nnoremap <C-p> :Files<Cr>
 source $HOME/.config/nvim/vim-plug/plugins.vim
 let g:airline_theme='dracula'
 
+let g:user_emmet_leader_key = ','
+
 let g:NERDTreeShowHidden = 1
 let g:NERDTreeMinimalUI = 1
 let g:NERDTreeIgnore = []

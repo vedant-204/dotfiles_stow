@@ -196,6 +196,7 @@ alias l='(exa -a --color=always --group-directories-first) |bat '  # all files a
 alias ld='(exa -l --color=always --group-directories-first) | bat'  # long format
 
 # Common use aliases
+alias man-emmet='docs ~/Documents/cheatsheet-a5.pdf'
 alias dog='cat'
 alias dot='cd ~/.config && nvim'
 alias minecraft='java -jar ~/Documents/TLauncher-2.841.jar'
