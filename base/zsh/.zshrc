@@ -316,6 +316,11 @@ ex ()
   fi
 }
 
+
+num(){
+  ls -l $1 | wc -
+}
+
 # Get fastest mirrors 
 alias mirror="sudo reflector -f 30 -l 30 --number 10 --verbose" 
 alias mirrord="sudo reflector --latest 50 --number 20 --sort delay" 
