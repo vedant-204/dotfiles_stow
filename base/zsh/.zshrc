@@ -318,7 +318,7 @@ ex ()
 
 
 num(){
-  ls -l $1 | wc -
+  ls -l $1 | wc -l
 }
 
 # Get fastest mirrors 
