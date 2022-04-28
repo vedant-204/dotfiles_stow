@@ -11,6 +11,7 @@
 #export PATH="$HOME/.emacs.d/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
+#export PATH="$HOME/.local/share/gem/ruby/3.0.0/bin"
 #export CHROME_EXECUTABLE='/usr/bin/google-chrome-stable'
 #export PATH="$HOME/.emacs.d/bin:$PATH"
 # export ANDROID_SDK= '$HOME/Android/Sdk'
