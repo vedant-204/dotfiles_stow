@@ -37,6 +37,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'tpope/vim-fugitive'
     "HTML"
     Plug 'mattn/emmet-vim'
+    "Window Management"
+
 call plug#end()
 
 "Config Section
