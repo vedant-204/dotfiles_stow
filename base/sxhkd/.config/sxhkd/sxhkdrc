@@ -160,6 +160,8 @@ super + shift + b
 #Screen Record
 super + r
 	$HOME/.scripts/record.sh
-
+#scratchpad
+super + alt + p
+	tdrop -ma -w 75% -h 45% -y 50% -x 12% alacritty --class=tdrop -t tdrop
 #Misc
 
