@@ -38,6 +38,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     "HTML"
     Plug 'mattn/emmet-vim'
     "Window Management"
+    "Rust Support
+    Plug 'rust-lang/rust.vim'    
+
 
 call plug#end()
 
