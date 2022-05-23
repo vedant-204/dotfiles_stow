@@ -197,6 +197,7 @@ alias l='(exa -a --color=always --group-directories-first) |bat '  # all files a
 alias ld='(exa -l --color=always --group-directories-first) | bat'  # long format
 
 # Common use aliases
+alias ap='absolutely-proprietary'
 alias man-emmet='docs ~/Documents/cheatsheet-a5.pdf'
 alias dog='cat'
 alias dot='cd ~/.config && nvim'
