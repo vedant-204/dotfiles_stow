@@ -29,7 +29,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     "Themes"
     Plug 'Mangeshrex/everblush.vim'
     "Copilot"
-    Plug 'github/copilot.vim'    
+    Plug 'github/copilot.vim'
     "Dracula theme"
     Plug 'dracula/vim'
     "icons"
@@ -40,6 +40,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     "Window Management"
     "Rust Support
     Plug 'rust-lang/rust.vim'    
+    Plug 'elkowar/yuck.vim'
 
 
 call plug#end()
