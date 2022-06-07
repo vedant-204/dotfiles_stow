@@ -9,7 +9,7 @@
 #
 
 
-super + @x + @u + u
+super + alt + ctrl + shift + u
     shutdown now
 # terminal emulator
 super + Return
