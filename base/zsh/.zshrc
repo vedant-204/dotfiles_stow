@@ -4,6 +4,9 @@
 # / /_ ___) |  _  |
 #/____|____/|_| |_|
 # by - vedant
+
+autoload -Uz compinit
+compinit
 #export JAVA_HOME="$HOME/Desktop/android-studio/jre/"
 #export PATH=$JAVA_HOME/bin:$PATH 
 #export PATH="$PATH:/home/kshgrk/Documents/flutter/bin"
@@ -46,6 +49,7 @@ source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 # Use history substring search
 source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
 
+source <(kubectl completion zsh)
 # Use profiles
 #source ~/.profile
 
@@ -204,7 +208,7 @@ alias dot='cd ~/.config && nvim'
 alias minecraft='java -jar ~/Documents/TLauncher-2.841.jar'
 alias mpv="devour mpv"
 alias course="dev && cd imp-docs"
-alias myweb="dev && cd WEB-DEV/vedant-website && code ."
+alias myweb="cd Desktop/DEV/webd/vedant-website && code ."
 alias leet="dev && cd DSA/leetcode"
 alias dsprac="dev && cd DSA/DSA-self-prac"
 alias vedant="cd ~/"
@@ -232,7 +236,6 @@ alias c='clear'
 alias e='exit'
 alias h='htop'
 alias p='pfetch'
-alias n='neofetch'
 alias s='sensors'
 alias b='bpytop'
 alias t='tmux new-session \; send-keys 'cod' C-m \; splitw -hp 40 \; send-keys 'cod' C-m'
