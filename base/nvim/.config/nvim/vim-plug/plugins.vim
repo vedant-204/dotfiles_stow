@@ -30,8 +30,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'Mangeshrex/everblush.vim'
     "Copilot"
     Plug 'github/copilot.vim'
-    "Dracula theme"
-    Plug 'dracula/vim'
+    "Theme"
+    Plug 'savq/melange'
     "icons"
     Plug 'ryanoasis/vim-devicons'
     Plug 'tpope/vim-fugitive'
@@ -51,5 +51,5 @@ if (has("termguicolors"))
  set termguicolors
 endif
 syntax enable
-colorscheme dracula
+colorscheme melange
 

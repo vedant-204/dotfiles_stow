@@ -9,8 +9,8 @@
 
 colors:
   primary:
-    background: '#222831'
-    foreground: '#f8f8f2'
+    background: '#171717'
+    foreground: '#ffffff'
     bright_foreground: '#ffffff'
   cursor:
     text: CellBackground
@@ -72,8 +72,7 @@ colors:
 # environment variables. Some entries may override variables
 # set by alacritty itself.
 #env:
-# TERM variable
-#
+# TERM varifffff#
 # This value is used to set the `$TERM` environment variable for
 # each instance of Alacritty. If it is not present, alacritty will
 # check the local terminfo database and use `alacritty` if it is
@@ -118,7 +117,7 @@ window:
 #
 # Window opacity as a floating point number from `0.0` to `1.0`.
 # The value `0.0` is completely transparent and `1.0` is opaque.
-opacity: 0.3 
+opacity: 0.1
 # Startup Mode (changes require restart)
 #
 # Values for `startup_mode`:

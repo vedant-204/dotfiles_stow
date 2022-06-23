@@ -34,6 +34,7 @@ bspc rule -a Screenkey manage=off
 
 zsh ~/.fehbg
 zsh $HOME/.config/polybar/launch.sh 
+#zsh $HOME/.config/eww/bar/launch_bar
 
 picom --experimental-backend --config $HOME/.config/picom/picom.conf 
 #/usr/bin/dunst &
