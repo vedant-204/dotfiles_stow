@@ -16,9 +16,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'jiangmiao/auto-pairs'
     " Discord Presence"
     Plug 'andweeb/presence.nvim'
-    "Airline"
-    Plug 'vim-airline/vim-airline'
-    Plug 'vim-airline/vim-airline-themes'    
+    "lightline"
+    Plug 'itchyny/lightline.vim'
     "Color Picker"
     Plug 'KabbAmine/vCoolor.vim'
     "fzf"
@@ -31,7 +30,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     "Copilot"
     Plug 'github/copilot.vim'
     "Theme"
-    Plug 'savq/melange'
+    Plug 'whatyouhide/vim-gotham'
     "icons"
     Plug 'ryanoasis/vim-devicons'
     Plug 'tpope/vim-fugitive'
@@ -51,5 +50,5 @@ if (has("termguicolors"))
  set termguicolors
 endif
 syntax enable
-colorscheme melange
+colorscheme gotham256
 
