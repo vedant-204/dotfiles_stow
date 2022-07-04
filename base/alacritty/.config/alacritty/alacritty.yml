@@ -6,61 +6,56 @@
 #                                    |___/
 
 # By : Vedantdev Katyayan
-
 colors:
+  # Default colors
   primary:
-    background: '#171717'
-    foreground: '#ffffff'
-    bright_foreground: '#ffffff'
-  cursor:
-    text: CellBackground
-    cursor: CellForeground
-  vi_mode_cursor:
-    text: CellBackground
-    cursor: CellForeground
-  search:
-    matches:
-      foreground: '#44475a'
-      background: '#50fa7b'
-    focused_match:
-      foreground: '#44475a'
-      background: '#ffb86c'
-    bar:
-      background: '#282a36'
-      foreground: '#f8f8f2'
-  hints:
-    start:
-      foreground: '#282a36'
-      background: '#f1fa8c'
-    end:
-      foreground: '#f1fa8c'
-      background: '#282a36'
-  line_indicator:
-    foreground: None
-    background: None
-  selection:
-    text: CellForeground
-    background: '#44475a'
-  normal:
-    black: '#21222c'
-    red: '#ff5555'
-    green: '#50fa7b'
-    yellow: '#f1fa8c'
-    blue: '#bd93f9'
-    magenta: '#ff79c6'
-    cyan: '#8be9fd'
-    white: '#f8f8f2'
-  bright:
-    black: '#6272a4'
-    red: '#ff6e6e'
-    green: '#69ff94'
-    yellow: '#ffffa5'
-    blue: '#d6acff'
-    magenta: '#ff92df'
-    cyan: '#a4ffff'
-    white: '#ffffff'
+    background: '#050605'
+    foreground: '#CADFD3'
 
+    dim_foreground:    '#dbdbdb'
+    bright_foreground: '#d9d9d9'
+    dim_background:    '#202020' # not sure
+    bright_background: '#3a3a3a' # not sure
+
+  # Cursor colors
+  cursor:
+    text:   '#2c2c2c'
+    cursor: '#d9d9d9'
+
+  # Normal colors
+  normal:
+    black:   '#1c1c1c'
+    red:     '#bc5653'
+    green:   '#909d63'
+    yellow:  '#ebc17a'
+    blue:    '#7eaac7'
+    magenta: '#aa6292'
+    cyan:    '#86d3ce'
+    white:   '#cacaca'
+
+  # Bright colors
+  bright:
+    black:   '#636363'
+    red:     '#bc5653'
+    green:   '#909d63'
+    yellow:  '#ebc17a'
+    blue:    '#7eaac7'
+    magenta: '#aa6292'
+    cyan:    '#86d3ce'
+    white:   '#f7f7f7'
+
+  # Dim colors
+  dim:
+    black:   '#232323'
+    red:     '#74423f'
+    green:   '#5e6547'
+    yellow:  '#8b7653'
+    blue:    '#556b79'
+    magenta: '#6e4962'
+    cyan:    '#5c8482'
+    white:   '#828282'
 # Imports are loaded in order, skipping all missing files, with the importing
+#
 # file being loaded last. If a field is already present in a previous import, it
 # will be replaced.
 #
@@ -153,13 +148,13 @@ opacity: 0.1
 # Font configuration
 font:
   normal: 
-    family: mononoki Nerd Font 
+    family: Hack Nerd Font 
     style: Regular
   bold:
-    family: mononoki Nerd Font 
+    family: Hack Nerd Font 
     style: Bold
   italic:
-    family: mononoki Nerd Font
+    family: Hack Nerd Font
     style: Italic
 # Bold italic font face
 #bolditalic:
@@ -171,7 +166,7 @@ font:
 # The `style` can be specified to pick a specific face.
 #style: Bold Italic
 # Point size
-  size: 10.0
+  size: 8.0
 # Offset is the extra space around each character. `offset.y` can be thought
 # of as modifying the line spacing, and `offset.x` as modifying the letter
 # spacing.
