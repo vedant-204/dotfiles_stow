@@ -40,7 +40,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     "Rust Support
     Plug 'rust-lang/rust.vim'    
     Plug 'elkowar/yuck.vim'
-
+    Plug 'romgrk/barbar.nvim'
+    Plug 'kyazdani42/nvim-web-devicons'
 
 call plug#end()
 
