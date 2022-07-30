@@ -139,11 +139,11 @@ super + shift + s
 
 #open the browser
 super + ctrl + b
-	vivaldi-stable
+	chromium
 
 #scripted commands
 super + shift + g
-	$HOME/.scripts/gitpat.sh
+	$HOME/Desktop/.scripts/gitpat.sh
 
 #Pulseaudio
 

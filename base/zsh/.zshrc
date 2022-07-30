@@ -201,6 +201,7 @@ alias l='(exa -a --color=always --group-directories-first) |bat '  # all files a
 alias ld='(exa -l --color=always --group-directories-first) | bat'  # long format
 
 # Common use aliases
+alias k8book='zathura ~/Downloads/k8book.pdf'
 alias reactprac='cd ~/Desktop/DEV/webd/react && code .'
 alias ap='absolutely-proprietary'
 alias man-emmet='docs ~/Documents/cheatsheet-a5.pdf'
