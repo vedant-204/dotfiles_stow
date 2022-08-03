@@ -2,6 +2,7 @@
 :set relativenumber
 :set autoindent
 :set smarttab
+:set mouse+=a
 nnoremap <C-p> :Files<Cr>
 source $HOME/.config/nvim/vim-plug/plugins.vim
 let g:lightline = { 'colorscheme': 'gotham' }
