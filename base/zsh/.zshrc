@@ -21,7 +21,7 @@ export PATH="$HOME/.cargo/bin:$PATH"
 # export PATH=$PATH:$ANDROID_SDK/tools/bin/
 # export PATH=$PATH:$ANDROID/emulator
 # export PATH=$PATH:$ANDROID_SDK/tools/
-
+export EDITOR=nvim
 # Set $PATH if ~/.local/bin exist
 #if [ -d "$HOME/.local/bin" ]; then
 #    export PATH=$HOME/.local/bin:$PATH
@@ -33,6 +33,7 @@ fi
 
 # PS1='%F{green}%f%F{blue}%1~%f%F{green}%f$vcs_info_msg_0_ %F{magenta} %f '
 eval "$(starship init zsh)"
+eval "$(zoxide init zsh)"
 function set_win_title(){
     echo -ne "\033]0; $USER@$HOST:${PWD/$HOME/~} \007"
 }
@@ -201,7 +202,8 @@ alias l='(exa -a --color=always --group-directories-first) |bat '  # all files a
 alias ld='(exa -l --color=always --group-directories-first) | bat'  # long format
 
 # Common use aliases
-alias k8book='zathura ~/Downloads/k8book.pdf'
+alias cd="z"
+alias k8book='devour zathura ~/Downloads/k8book.pdf'
 alias reactprac='cd ~/Desktop/DEV/webd/react && code .'
 alias ap='absolutely-proprietary'
 alias man-emmet='docs ~/Documents/cheatsheet-a5.pdf'
