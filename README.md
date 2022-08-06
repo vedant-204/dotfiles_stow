@@ -1,5 +1,5 @@
 # I USE ARCH BTW
-<p >
+<p align="center">
  <img  src="https://visitor-badge.glitch.me/badge?page_id=vedant-204/dotfiles_stow.visitor-badge" >  
  <img  alt="" src="https://img.shields.io/github/repo-size/vedant-204/dotfiles_stow?style=flat&label=repo-size&color=fb9199&labelColor=1d212a"/>
 </p>
