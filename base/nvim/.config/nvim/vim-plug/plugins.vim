@@ -42,6 +42,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'elkowar/yuck.vim'
     Plug 'romgrk/barbar.nvim'
     Plug 'kyazdani42/nvim-web-devicons'
+    "Git management
+    Plug 'tpope/vim-fugitive'
 
 call plug#end()
 
