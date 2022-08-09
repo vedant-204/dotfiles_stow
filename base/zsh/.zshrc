@@ -203,6 +203,7 @@ alias ld='(exa -l --color=always --group-directories-first) | bat'  # long forma
 
 # Common use aliases
 alias cd="z"
+alias pwd="pwd | xclip -selection clipboard"
 alias k8book='devour zathura ~/Downloads/k8book.pdf'
 alias reactprac='cd ~/Desktop/DEV/webd/react && code .'
 alias ap='absolutely-proprietary'
