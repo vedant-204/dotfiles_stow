@@ -42,7 +42,7 @@ precmd_functions+=(set_win_title)
 ## Plugins section: Enable fish style features
 # Use syntax highlighting
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-# source /usr/share/zsh/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+source /usr/share/zsh/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 
 # Use autosuggestion
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
@@ -55,9 +55,9 @@ source <(kubectl completion zsh)
 #source ~/.profile
 
 # Use fzf
-#source /usr/share/fzf/key-bindings.zsh
-#source /usr/share/fzf/completion.zsh
-#source ~/github/fzf-tab/fzf-tab.plugin.zsh
+source /usr/share/fzf/key-bindings.zsh
+source /usr/share/fzf/completion.zsh
+source ~/github/fzf-tab/fzf-tab.plugin.zsh
 # disable sort when completing `git checkout`
 zstyle ':completion:*:git-checkout:*' sort false
 # set descriptions format to enable group support
@@ -200,8 +200,10 @@ alias la='(exa -ahl --color=always --group-directories-first) | bat ' # my prefe
 alias lr='(exa -aR --color=always --group-directories-first) |bat '  # all files and dirs
 alias l='(exa -a --color=always --group-directories-first) |bat '  # all files and dirs
 alias ld='(exa -l --color=always --group-directories-first) | bat'  # long format
+alias kc='kubectl'
 
 # Common use aliases
+alias pd="cd project-management"
 alias cd="z"
 alias pwd="pwd | xclip -selection clipboard"
 alias k8book='devour zathura ~/Downloads/k8book.pdf'

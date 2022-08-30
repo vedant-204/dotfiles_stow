@@ -13,8 +13,7 @@ super + alt + ctrl + shift + u
     shutdown now
 # terminal emulator
 super + Return
-	alacritty
-
+	kitty
 #splatmoji
 super + e
 	rofimoji

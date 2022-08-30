@@ -10,7 +10,7 @@
 pgrep -x sxhkd > /dev/null || sxhkd &
 bspc monitor -d I II III IV V VI VII VIII  
 
-bspc config window_gap          10
+bspc config window_gap          3
 
 #ratio
 bspc config split_ratio          0.52
@@ -36,5 +36,8 @@ zsh $HOME/.config/polybar/launch.sh
 #zsh $HOME/.config/eww/bar/launch_bar
 nm-applet &
 picom --experimental-backend --config $HOME/.config/picom/picom.conf 
+# restart window titles daemon
+while pgrep -u $UID -f bspwm_window_titles >/dev/null; do pkill -f bspwm_window_titles; done
+bspwm_window_titles &
 #/usr/bin/dunst &
 #wal -i ~/Pictures/phy.png 

@@ -44,6 +44,14 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'kyazdani42/nvim-web-devicons'
     "Git management
     Plug 'tpope/vim-fugitive'
+    Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
+    Plug 'airblade/vim-rooter'
+    Plug 'norcalli/nvim-colorizer.lua'
+    Plug 'junegunn/rainbow_parentheses.vim'
+    Plug 'mhinz/vim-startify'
+    Plug 'tpope/vim-commentary'
+    Plug 'tpope/vim-surround'
+    Plug 'chrisbra/csv.vim'
 
 call plug#end()
 
