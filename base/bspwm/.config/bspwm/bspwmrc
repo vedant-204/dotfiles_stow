@@ -29,6 +29,11 @@ bspc rule -a mplayer2 state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 
+#padding
+bspc config top_padding 2
+bspc config bottom_padding 2
+bspc config left_padding 12
+bspc config right_padding 12
 #auto-start
 
 zsh ~/.fehbg
@@ -41,3 +46,6 @@ while pgrep -u $UID -f bspwm_window_titles >/dev/null; do pkill -f bspwm_window_
 bspwm_window_titles &
 #/usr/bin/dunst &
 #wal -i ~/Pictures/phy.png 
+
+#greenclip
+greenclip daemon &
