@@ -55,9 +55,9 @@ source <(kubectl completion zsh)
 #source ~/.profile
 
 # Use fzf
-source /usr/share/fzf/key-bindings.zsh
-source /usr/share/fzf/completion.zsh
-source ~/github/fzf-tab/fzf-tab.plugin.zsh
+#source /usr/share/fzf/key-bindings.zsh
+#source /usr/share/fzf/completion.zsh
+#source ~/github/fzf-tab/fzf-tab.plugin.zsh
 # disable sort when completing `git checkout`
 zstyle ':completion:*:git-checkout:*' sort false
 # set descriptions format to enable group support
@@ -114,7 +114,7 @@ SAVEHIST=10000
 
 ## Keys
 # Use emacs key bindings
-bindkey -e
+bindkey -v
 
 # [PageUp] - Up a line of history
 if [[ -n "${terminfo[kpp]}" ]]; then
@@ -203,7 +203,7 @@ alias ld='(exa -l --color=always --group-directories-first) | bat'  # long forma
 alias kc='kubectl'
 
 # Common use aliases
-alias pd="cd project-management"
+alias pd="cd project-management-webapp && code ."
 alias cd="z"
 alias pwd="pwd | xclip -selection clipboard"
 alias k8book='devour zathura ~/Downloads/k8book.pdf'
