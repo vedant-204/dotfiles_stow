@@ -203,6 +203,7 @@ alias ld='(exa -l --color=always --group-directories-first) | bat'  # long forma
 alias kc='kubectl'
 
 # Common use aliases
+alias vd="cd /home/phy/Desktop/DEV/webd/portfolio-web/Portfolio && code ."
 alias pd="cd project-management-webapp && code ."
 alias cd="z"
 alias pwd="pwd | xclip -selection clipboard"
