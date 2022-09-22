@@ -30,7 +30,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     "Copilot"
     Plug 'github/copilot.vim'
     "Theme"
-    Plug 'whatyouhide/vim-gotham'
+    Plug 'dracula/vim', { 'as': 'dracula' }
     "icons"
     Plug 'ryanoasis/vim-devicons'
     Plug 'tpope/vim-fugitive'
@@ -61,5 +61,5 @@ if (has("termguicolors"))
  set termguicolors
 endif
 syntax enable
-colorscheme gotham256
+colorscheme dracula
 
