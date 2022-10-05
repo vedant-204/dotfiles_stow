@@ -97,7 +97,7 @@ line-size = 3
 wm-restack = bspwm
 
 modules-left =  sep round-left cpu round-right sep calendar
-modules-center = windowtitle
+modules-center = playerctl
 modules-right = sep mem sep temperature sep battery
 
 font-0 = JetBrainsMono Nerd Font:style=Bold:pixelsize=13;3
@@ -302,6 +302,20 @@ internal = 5.0
 label = %output% 
 label-foreground = #BF616A
 label-padding = 1
+
+[module/playerctl]
+type = custom/script
+exec = playerctl metadata --format "{{ title }} - {{ artist }}"
+format = <label>
+label =  %output:0:80%
+label-foreground = #F67F72
+label-padding = 1
+click-left = playerctl play-pause
+click-right = playerctl next
+click-middle = playerctl previous
+scroll-up = playerctl volume +5%
+scroll-down = playerctl volume -5%
+interval = 1
 
 [module/xbacklight]
 type = internal/xbacklight

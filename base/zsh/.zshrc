@@ -1,39 +1,36 @@
-# _________  _   _
-#|__  / ___|| | | |
-#  / /\___ \| |_| |
-# / /_ ___) |  _  |
-#/____|____/|_| |_|
-# by - vedant
+# Created by newuser for 5.8
+# If you come from bash you might have to change your $PATH.
+#pywal
+#wal -qi "/home/neo/simulation_loader/simulation2/Pratham/misc/wallpapers/wallhaven-q2mk17.jpg"
+#pokemon-colorscripts -r 1 --no-title
+#neofetch
+ 
+# export PATH=$HOME/bin:/usr/local/bin:$PATH
+#export R_LIBS_USER="/home/neo/r-libs"
 
-autoload -Uz compinit
-compinit
-#export JAVA_HOME="$HOME/Desktop/android-studio/jre/"
-#export PATH=$JAVA_HOME/bin:$PATH 
-#export PATH="$PATH:/home/kshgrk/Documents/flutter/bin"
-#export PATH="$PATH:/home/kshgrk/Documents/flutter/bin/cache/dart-sdk"
-#export PATH="$HOME/.emacs.d/bin:$PATH"
+# added by Anaconda3 installer
 export PATH="$HOME/.local/bin:$PATH"
-export PATH="$HOME/.cargo/bin:$PATH"
-#export PATH="$HOME/.local/share/gem/ruby/3.0.0/bin"
 #export CHROME_EXECUTABLE='/usr/bin/google-chrome-stable'
-#export PATH="$HOME/.emacs.d/bin:$PATH"
 # export ANDROID_SDK= '$HOME/Android/Sdk'
 # export PATH=$PATH:$ANDROID_SDK/tools/bin/
 # export PATH=$PATH:$ANDROID/emulator
 # export PATH=$PATH:$ANDROID_SDK/tools/
-export EDITOR=nvim
+
 # Set $PATH if ~/.local/bin exist
 #if [ -d "$HOME/.local/bin" ]; then
 #    export PATH=$HOME/.local/bin:$PATH
 #fi
 
+
 if [ -d "$HOME/.local/lib" ]; then
     export PATH=$HOME/.local/lib:$PATH
 fi
 
+#zoxide
+eval "$(zoxide init zsh)"
+
 # PS1='%F{green}%f%F{blue}%1~%f%F{green}%f$vcs_info_msg_0_ %F{magenta} %f '
 eval "$(starship init zsh)"
-eval "$(zoxide init zsh)"
 function set_win_title(){
     echo -ne "\033]0; $USER@$HOST:${PWD/$HOME/~} \007"
 }
@@ -42,7 +39,7 @@ precmd_functions+=(set_win_title)
 ## Plugins section: Enable fish style features
 # Use syntax highlighting
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/share/zsh/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+# source /usr/share/zsh/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 
 # Use autosuggestion
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
@@ -50,7 +47,6 @@ source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 # Use history substring search
 source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
 
-source <(kubectl completion zsh)
 # Use profiles
 #source ~/.profile
 
@@ -65,7 +61,7 @@ zstyle ':completion:*:descriptions' format '[%d]'
 # set list-colors to enable filename colorizing
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 # preview directory's content with exa when completing cd
-zstyle ':fzf-tab:complete:cd:*' fzf-preview 'exa -1 --color=always $realpath'
+zstyle ':fzf-tab:complete:cd:*' fzf-preview 'exa --icons --color=always $realpath'
 # switch group using `,` and `.`
 zstyle ':fzf-tab:*' switch-group ',' '.'
 # Arch Linux command-not-found support, you must have package pkgfile installed
@@ -113,7 +109,7 @@ SAVEHIST=10000
 
 
 ## Keys
-# Use emacs key bindings
+# Use vim key bindings
 bindkey -v
 
 # [PageUp] - Up a line of history
@@ -189,20 +185,9 @@ fi
 bindkey "^[[1;5C" forward-word
 bindkey "^[[1;5D" backward-word
 
-## Useful aliases
-# Replace ls with exa
-alias ls='exa -al --color=always --group-directories-first' # preferred listing
-alias la='exa -a --color=always --group-directories-first'  # all files and dirs
-alias ll='exa -l --color=always --group-directories-first'  # long format
-alias lt='exa -aT --color=always --group-directories-first' # tree listing
-alias l.="exa -a | egrep '^\.'"
-alias la='(exa -ahl --color=always --group-directories-first) | bat ' # my preferred listing
-alias lr='(exa -aR --color=always --group-directories-first) |bat '  # all files and dirs
-alias l='(exa -a --color=always --group-directories-first) |bat '  # all files and dirs
-alias ld='(exa -l --color=always --group-directories-first) | bat'  # long format
-alias kc='kubectl'
-
 # Common use aliases
+alias k="kubectl"
+alias project="cd ~/Desktop/DEV/project"
 alias vd="cd /home/phy/Desktop/DEV/webd/portfolio-web/Portfolio && code ."
 alias pd="cd project-management-webapp && code ."
 alias cd="z"
@@ -248,6 +233,18 @@ alias s='sensors'
 alias b='bpytop'
 alias t='tmux new-session \; send-keys 'cod' C-m \; splitw -hp 40 \; send-keys 'cod' C-m'
 # alias spr="command curl -fsLF 'sprunge=<-' http://sprunge.us"
+# Changing "ls" to "exa"
+alias la='(exa --git -ahl --color=always --group-directories-first --sort date) | bat ' # my preferred listing
+alias lr='(exa -R --color=always --group-directories-first) |bat '  # all files and dirs
+alias ll='(exa -al --color=always --group-directories-first --sort name) '  # all files and dirs
+alias ld='(exa --git -l --color=always --group-directories-first --sort date) | bat'  # long format
+alias lt='(exa -aT --color=always --group-directories-first)| bat' # tree listing
+alias l='exa -a --color=always --group-directories-first --sort date'
+alias l.='exa -a | egrep "^\." | bat'
+alias g="grep"
+alias ls='exa --icons --color=always --group-directories-first'
+alias lcr='exa -lhFT --color=always --icons --sort=size --group-directories-first'
+# alias ls='exa --color=always --group-directories-first'
 alias P='sudo powertop'
 alias cc='sudo sh -c "echo 1 > /proc/sys/vm/drop_caches"'
 alias bb='sudo sh -c "echo 2 > /proc/sys/vm/drop_caches"'
@@ -275,18 +272,6 @@ alias sz='du -sh ./* | sort -h'
 alias makecfile='echo "#include <stdio.h>\n#include <stdlib.h>\n\n\nint main(){\n}" >> '
 alias makecppfile='echo "#include <stdio.h>\n#include <stdlib.h>\n#include <iostream>\n#include <bits/stdc++.h>\n\nint main(){\n}" >> '
 
-# Functions
-ushort(){
-  curl -F 'shorten='$1'' https://0x0.st
-}
-
-ufile(){
-  curl -F 'file='$1'' https://0x0.st
-}
-
-ushareg(){
-  curl -F 'url='$1'' https://0x0.st
-}
 
 spr (){
     cat "$@" \
@@ -303,6 +288,9 @@ em (){
 iso (){
   sudo dd bs=4M if=$1 of=/dev/$2 status=progress && sync
 }
+
+touch2() { mkdir -p "$(dirname "$1")" && touch "$1" ; }
+
 
 ex ()
 {
@@ -329,12 +317,17 @@ ex ()
   fi
 }
 
-
-num(){
-  ls -l $1 | wc -l
+yi() {
+  SELECTED_PKGS="$(yay -Slq | fzf --header='Install packages' -m --height 100% --preview 'yay -Si {1}')"
+  if [ -n "$SELECTED_PKGS" ]; then
+    yay -S $(echo $SELECTED_PKGS)
+  fi
 }
 
-# Get fastest mirrors 
+
+
+
+# Get fastest mirrors
 alias mirror="sudo reflector -f 30 -l 30 --number 10 --verbose" 
 alias mirrord="sudo reflector --latest 50 --number 20 --sort delay" 
 alias mirrors="sudo reflector --latest 50 --number 20 --sort score" 
@@ -371,7 +364,6 @@ zstyle :bracketed-paste-magic paste-finish pastefinish
 # and finally, make sure zsh-autosuggestions does not interfere with it:
 ZSH_AUTOSUGGEST_CLEAR_WIDGETS+=(bracketed-paste)
 
-# eval "$(ssh-agent -s)"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_OPTS="
@@ -389,3 +381,8 @@ export FZF_DEFAULT_OPTS="
 --bind 'ctrl-e:execute(echo {+} | xargs -o vim)'
 --bind 'ctrl-v:execute(code {+})'
 "
+
+
+
+export PATH='/home/psaraf/.deta/bin:/home/psaraf/.local/bin:/home/psaraf/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/psaraf/.fzf/bin'
+
