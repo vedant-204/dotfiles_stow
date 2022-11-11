@@ -22,6 +22,7 @@ Here are some details about my setup:
 - **Editor:** [neovim](https://github.com/neovim/neovim) / [vscode](https://github.com/microsoft/vscode)
 - **Compositor:** [picom](https://github.com/Arian8j2/picom-jonaburg-fix.git)
 - **Application Launcher:** [rofi](https://github.com/davatorium/rofi)
+- **Widgest:** [eww](https://github.com/elkowar/eww)
 
 ## Installation
 
