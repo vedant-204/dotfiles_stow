@@ -7,7 +7,7 @@
 <br>
 
 ![S-1](assets/wall1.png)
-![S-2](assets/wall2.png)
+![S-2](assets/wall3.png)
 
 
 
