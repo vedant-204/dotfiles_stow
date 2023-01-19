@@ -45,7 +45,6 @@ active-light = #313435
 
 [bar/bar-top]
 #tray-position = empty
-tray-padding = 5
 monitor = eDP1
 width =  100%
 height = 24
@@ -62,11 +61,12 @@ offset-x = 0.0%
 offset-y = 0.0%
 fixed-center = true
 line-size = 3
+enable-ipc = true
 wm-restack = bspwm
 
-modules-left = powermenu round-left time round-right sep 
-modules-center =  round-left bspwm round-right
-modules-right = pulseaudio sep xbacklight sep wlan sep 
+modules-left = sep round-left bspwm round-right
+modules-right = pulseaudio sep xbacklight sep wlan powermenu
+modules-center = cava
 
 font-0 = JetBrainsMono Nerd Font:style=Bold:pixelsize=13;3
 font-1 = JetBrainsMono Nerd Font:size=18;5
@@ -80,6 +80,7 @@ tray-position = left
 tray-padding =5
 monitor = eDP1
 width =  100%
+enable-ipc = true
 height = 20
 padding-left =0
 padding-right =0
@@ -96,9 +97,9 @@ fixed-center = true
 line-size = 3
 wm-restack = bspwm
 
-modules-left =  sep round-left cpu round-right sep calendar
+modules-left =  sep calendar round-left time round-right
 modules-center = playerctl
-modules-right = sep mem sep temperature sep battery
+modules-right = sep round-left cpu round-right sep mem sep temperature sep battery
 
 font-0 = JetBrainsMono Nerd Font:style=Bold:pixelsize=13;3
 font-1 = JetBrainsMono Nerd Font:size=18;5
@@ -356,4 +357,15 @@ label = %output%
 format-prefix-foreground = #61afef
 label-foreground = #D8DEE9
 format-padding = 1
+
+[module/cava]
+type = custom/script
+exec = ~/.config/polybar/scripts/cava.sh
+tail = true
+format = <label>
+label = %output%
+format-background = #83548A
+format-foreground = #FF8474
+format-padding = 1
+
 

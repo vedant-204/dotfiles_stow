@@ -1,4 +1,4 @@
-# Created by newuser for 5.8
+#Created by newuser for 5.8
 # If you come from bash you might have to change your $PATH.
 #pywal
 #wal -qi "/home/neo/simulation_loader/simulation2/Pratham/misc/wallpapers/wallhaven-q2mk17.jpg"
@@ -186,8 +186,12 @@ bindkey "^[[1;5C" forward-word
 bindkey "^[[1;5D" backward-word
 
 # Common use aliases
+alias obsidian="flatpak run md.obsidian.Obsidian"
 alias k="kubectl"
-alias project="cd ~/Desktop/DEV/project"
+alias nvim="devour neovide" 
+alias .p="cd ~/Desktop/DEV/project"
+alias .a="cd ~/Desktop/DEV/Aoc"
+alias .c="cd ~/Desktop/DEV/cybersec"
 alias vd="cd /home/phy/Desktop/DEV/webd/portfolio-web/Portfolio && code ."
 alias pd="cd project-management-webapp && code ."
 alias cd="z"

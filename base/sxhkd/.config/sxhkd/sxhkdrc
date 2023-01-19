@@ -1,4 +1,5 @@
-#          _     _       _
+#
+#           _     _       _
 #  _____  _| |__ | | ____| |
 # / __\ \/ / '_ \| |/ / _` |
 # \__ \>  <| | | |   < (_| |
@@ -13,10 +14,11 @@ super + alt + ctrl + shift + u
     shutdown now
 # terminal emulator
 super + Return
-	kitty
+ kitty
 #splatmoji
 super + e
-	rofimoji
+	polybar-msg cmd toggle
+	#rofimoji
 
 # program launcher
 super + @space
@@ -52,8 +54,6 @@ super + g
 
 #
 # state/flags
-#
-
 # set the window state
 super + {t,shift + t,s,f}
 	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
@@ -94,7 +94,8 @@ super + {o,i}
 
 # focus or send to the given desktop
 super + {_,shift + }{1-9,0}
-	bspc {desktop -f,node -d} '^{1-9,10}'
+	bspc {desktop -f,node -d} '^{1-9,10}' \
+	&& polybar -msg cmd toggle
 
 #
 # preselect
@@ -171,3 +172,16 @@ super + ctrl + alt + c
 	$HOME/.config/bin/widgets/control-panel
 super + ctrl + alt + i
 	$HOME/.config/bin/widgets/info-panel
+
+#clipboard
+super + alt + v
+	rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'
+
+#ocr
+
+super + shift + o
+	$HOME/Desktop/.scripts/ocr.sh
+
+#obsidian
+super + alt + o
+	$HOME/Desktop/.scripts/obsidian.sh

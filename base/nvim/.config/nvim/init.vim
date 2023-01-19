@@ -12,6 +12,14 @@ let g:lightline = { 'colorscheme': 'gotham256' }
 let g:lightline = { 'enable': { 'statusline': 1, 'tabline': 0} }
 let g:user_emmet_leader_key = ','
 
+#neovide
+set guifont=Hack,Noto_Color_Emoji:h8
+let g:neovide_cursor_vfx_mode = "pixiedust"
+let g:neovide_scale_factor = 0.7
+let g:neovide_cursor_vfx_particle_density = 100.0
+let g:neovide_refresh_rate = 60
+let g:neovide_hide_mouse_when_typing = v:true
+
 let g:NERDTreeShowHidden = 1
 let g:NERDTreeMinimalUI = 1
 let g:NERDTreeIgnore = []
@@ -19,7 +27,7 @@ let g:NERDTreeStatusline = ''
 " Automaticaly close nvim if NERDTree is only thing left open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 " Toggle
-nnoremap <silent> <C-b> :NERDTreeToggle<CR>
+nnoremap <silent> <C-e> :NERDTreeToggle<CR>
 
 " open new split panes to right and below
 set splitright
@@ -44,6 +52,13 @@ nnoremap <A-h> <C-w>h
 nnoremap <A-j> <C-w>j
 nnoremap <A-k> <C-w>k
 nnoremap <A-l> <C-w>l
+
+nmap <leader>gs :Gstatus<cr>
+nmap <leader>gc :Gcommit<cr>
+nmap <leader>ga :Gwrite<cr>
+nmap <leader>gl :Glog<cr>
+nmap <leader>gd :Gdiff<cr>
+
 
 nnoremap <C-p> :FZF<CR>
 let g:fzf_action = {

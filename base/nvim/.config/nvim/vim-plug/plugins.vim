@@ -33,7 +33,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'dracula/vim', { 'as': 'dracula' }
     "icons"
     Plug 'ryanoasis/vim-devicons'
-    Plug 'tpope/vim-fugitive'
     "HTML"
     Plug 'mattn/emmet-vim'
     "Window Management"
@@ -52,6 +51,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'tpope/vim-commentary'
     Plug 'tpope/vim-surround'
     Plug 'chrisbra/csv.vim'
+    Plug 'tpope/vim-fugitive'
 
 call plug#end()
 
