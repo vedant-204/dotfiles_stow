@@ -10,15 +10,16 @@
 pgrep -x sxhkd > /dev/null || sxhkd &
 bspc monitor -d I II III IV V VI VII VIII  
 
-bspc config window_gap          3
-
+bspc config window_gap          2
+bspc rule -r "*"
 #ratio
-bspc config split_ratio          0.52
+bspc config split_ratio          0.50
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
+
 #border
-bspc config border_width         5 
+bspc config border_width         2 
 bspc config active_border_color 	"#D3D3D3"
 bspc config focused_border_color 	"#000000"
 bspc config normal_border_color 	"#ffffff"
@@ -29,21 +30,24 @@ bspc rule -a mplayer2 state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 
-#padding
-bspc config top_padding 2
-bspc config bottom_padding 2
-bspc config left_padding 12
-bspc config right_padding 12
+#bspc configs
+bspc config top_padding 0
+bspc config bottom_padding 0
+bspc config left_padding 0
+bspc config right_padding 0
+bspc config single_monocle false
+
+
 #auto-start
 
 zsh ~/.fehbg
-zsh $HOME/.config/polybar/launch.sh 
+zsh $HOME/.config/polybar/launch.sh &
 #zsh $HOME/.config/eww/bar/launch_bar
 nm-applet &
-picom --experimental-backend --config $HOME/.config/picom/picom.conf 
+picom --experimental-backend --config $HOME/.config/picom/picom.conf &
 # restart window titles daemon
-while pgrep -u $UID -f bspwm_window_titles >/dev/null; do pkill -f bspwm_window_titles; done
-bspwm_window_titles &
+#while pgrep -u $UID -f bspwm_window_titles >/dev/null; do pkill -f bspwm_window_titles; done
+#bspwm_window_titles &
 #/usr/bin/dunst &
 #wal -i ~/Pictures/phy.png 
 
